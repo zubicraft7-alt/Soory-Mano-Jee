@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Something For Mano 💗</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg,#ffe2ef,#e9d9ff,#fff1f6);
+    color: #805879;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 480px;
+    background: rgba(255,255,255,.76);
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 38px 25px;
+    text-align: center;
+    box-shadow: 0 15px 55px #bd86bd44;
+    backdrop-filter: blur(15px);
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #d66f9e;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #bb79a8;
+    margin: 15px 0;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 18px 0;
+}
+
+.emoji {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+button {
+    border: none;
+    padding: 14px 25px;
+    margin: 10px 5px;
+    border-radius: 30px;
+    background: linear-gradient(135deg,#f29cc4,#b89af3);
+    color: white;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 5px 15px #d98bb555;
+}
+
+button:hover {
+    transform: translateY(-4px) scale(1.04);
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+    animation: fade .7s ease;
+}
+
+@keyframes fade {
+    from {opacity:0;transform:translateY(18px);}
+    to {opacity:1;transform:translateY(0);}
+}
+
+.flowers {
+    font-size: 38px;
+    line-height: 1.8;
+    margin: 20px;
+}
+
+.chocolates {
+    font-size: 55px;
+    margin: 20px;
+}
+
+footer {
+    color: #b78aaa;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.heart {
+    position: fixed;
+    bottom: -40px;
+    z-index: 1;
+    pointer-events: none;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.small {
+    font-size: 12px;
+    color: #b18ba9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="card">
+
+<!-- SCREEN 1 -->
+<section class="page active" id="page1">
+
+<div class="emoji">💌</div>
+<h1>Heyyy Manooo!!</h1>
+
+<p>
+Oyyyy Biloriiii 🌷
+<br><br>
+Zainiiww has made a little something for youuu
+heheee 😭💗
+<br><br>
+It's nothing extraordinary but just a little
+surprise to remind you that you are important to meee
+</p>
+
+<h3>Wanna see ittt? 🥹</h3>
+
+<button onclick="nextPage(2)">
+Click here for a surprise 💗
+</button>
+
+<footer>made with care by Zainiiww ✨</footer>
+</section>
+
+
+<!-- SCREEN 2 -->
+<section class="page" id="page2">
+
+<div class="emoji">🧸</div>
+<h1>One Thinggg!!</h1>
+
+<p>
+Yk Mano you are actually important to meee
+<br><br>
+Maybe I don't express it properly
+but that doesn't mean I don't careee
+<br><br>
+Your presence matters and I genuinely
+want to see you happyyyy
+<br><br>
+So never think you don't matter okayyy 🥹
+</p>
+
+<button onclick="nextPage(3)">Nexttt Biloriiii 🌸</button>
+</section>
+
+
+<!-- SCREEN 3 -->
+<section class="page" id="page3">
+
+<div class="emoji">🥺</div>
+<h1>How Are Youuu?</h1>
+
+<p>
+I know ap abhi zyada better feel ni kr rhi
+and maybe your mood is not that good
+<br><br>
+But yaar it's okayyy
+har waqt happy rehna zaroori ni hota
+<br><br>
+Just take your time and don't put
+too much pressure on yourself
+<br><br>
+And yesss I'm here if you ever need
+someone to talk to 🫶🏻
+</p>
+
+<button onclick="nextPage(4)">Listen to meee 💗</button>
+</section>
+
+
+<!-- SCREEN 4 -->
+<section class="page" id="page4">
+
+<div class="emoji">🥹💗</div>
+<h1>I'm Sorryyy</h1>
+
+<p>
+Yawrrr I also wanna say sorry for some
+of my behaviour
+<br><br>
+Idk sometimes I say too much and
+maybe I disturb you without even realizing it
+<br><br>
+I knowww I should understand things better
+and I'm genuinely trying my best
+<br><br>
+I never wanted to make you uncomfortable
+or ruin your mood
+<br><br>
+So sorry for that Manooo
+I'll try to be better okayyy 🌷
+</p>
+
+<button onclick="nextPage(5)">A little gift for you 🎁</button>
+</section>
+
+
+<!-- SCREEN 5 -->
+<section class="page" id="page5">
+
+<div class="emoji">💐</div>
+<h1>Flowers For Youuu</h1>
+
+<p>
+Since I can't give you actual flowers
+here's a whole bouquet for my Biloriiii 😭
+</p>
+
+<div class="flowers">
+🌷 🌸 🌹 🌼<br>
+💐 🌺 🌻 🌷
+</div>
+
+<p>
+Hope these make you smile even a littleee 🥹
+</p>
+
+<button onclick="nextPage(6)">More surpriseee 🍫</button>
+</section>
+
+
+<!-- SCREEN 6 -->
+<section class="page" id="page6">
+
+<div class="chocolates">🍫🍬🍫</div>
+<h1>Chocolates For Manooo</h1>
+
+<p>
+Hereeee take theseee 😭
+<br><br>
+🍫 🍬 🍫 🍭 🍫
+<br><br>
+Unlimited virtual chocolates
+because you deserve some sweetness toooo
+heheee 💗
+</p>
+
+<button onclick="nextPage(7)">Last thinggg 🦋</button>
+</section>
+
+
+<!-- SCREEN 7 -->
+<section class="page" id="page7">
+
+<div class="emoji">🦋</div>
+<h1>For My Biloriiii</h1>
+
+<p>
+Yk what Mano
+I just hope things get better for you
+and you find more reasons to smileee
+<br><br>
+Please take care of yourself
+and don't overthink everythinggg
+<br><br>
+You don't have to pretend to be okay
+all the time
+<br><br>
+And once again I'm sorry for my mistakes
+and thank you for being you
+<br><br>
+You are important to meee
+and I hope you never forget thattt 💗
+</p>
+
+<div class="flowers">🌷 🧸 💗 🦋</div>
+
+<h3>Stay happYYYY Biloriiii</h3>
+
+<p class="small">From your Zainiiww 🥹</p>
+
+<button onclick="nextPage(1)">Read againnn ↻</button>
+
+<footer>made specially for Mano 💗</footer>
+</section>
+
+</div>
+</div>
+
+
+<script>
+
+function nextPage(number) {
+
+    document.querySelectorAll('.page').forEach(page => {
+        page.classList.remove('active');
+    });
+
+    document.getElementById('page' + number).classList.add('active');
+
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+
+// Floating hearts and sparkles
+
+function createHeart() {
+
+    const heart = document.createElement('div');
+
+    heart.className = 'heart';
+
+    const symbols = ['💗','💕','🌸','✨','🦋'];
+
+    heart.innerHTML =
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+    heart.style.left = Math.random() * 100 + 'vw';
+
+    heart.style.fontSize =
+        (15 + Math.random() * 20) + 'px';
+
+    heart.style.animationDuration =
+        (5 + Math.random() * 5) + 's';
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 10000);
+}
+
+setInterval(createHeart, 600);
+
+</script>
+
+</body>
+</html>
